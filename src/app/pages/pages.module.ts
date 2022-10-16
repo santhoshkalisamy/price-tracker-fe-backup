@@ -25,8 +25,6 @@ import { SharedModule } from "../shared/shared.module";
 import { WidgetModule } from '../shared/widget/widget.module';
 import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { DashboardsModule } from "./dashboards/dashboards.module";
-import { AppsModule } from "./apps/apps.module";
-import { EcommerceModule } from "./ecommerce/ecommerce.module";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -50,9 +48,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     WidgetModule,
     SwiperModule,
     LightboxModule,
-    DashboardsModule,
-    AppsModule,
-    EcommerceModule
+    DashboardsModule
   ],
   providers: [
     {
@@ -62,7 +58,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class PagesModule { 
+export class PagesModule {
   constructor() {
     defineLordIconElement(lottie.loadAnimation);
   }

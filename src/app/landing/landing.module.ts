@@ -10,13 +10,10 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { LandingRoutingModule } from "./landing-routing.module";
 import { SharedModule } from '../shared/shared.module';
-import { NftComponent } from './nft/nft.component';
-
 
 @NgModule({
   declarations: [
     IndexComponent,
-    NftComponent
   ],
   imports: [
     CommonModule,

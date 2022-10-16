@@ -13,25 +13,7 @@ const routes: Routes = [
       path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
     },
     {
-      path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule)
-    },
-    {
-      path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule)
-    },
-    {
-      path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
-    },
-    {
       path: 'tasks', loadChildren: () => import('./tasks/tasks.module').then(m => m.TasksModule)
-    },
-    {
-      path: 'crm', loadChildren: () => import('./crm/crm.module').then(m => m.CrmModule)
-    },
-    {
-      path: 'crypto', loadChildren: () => import('./crypto/crypto.module').then(m => m.CryptoModule)
-    },
-    {
-      path: 'invoices', loadChildren: () => import('./invoices/invoices.module').then(m => m.InvoicesModule)
     },
     {
       path: 'tickets', loadChildren: () => import('./tickets/tickets.module').then(m => m.TicketsModule)
@@ -54,12 +36,6 @@ const routes: Routes = [
     },
     {
       path: 'icons', loadChildren: () => import('./icons/icons.module').then(m => m.IconsModule)
-    },
-    {
-      path: 'maps', loadChildren: () => import('./maps/maps.module').then(m => m.MapsModule)
-    },
-    {
-      path: 'marletplace', loadChildren: () => import('./nft-marketplace/nft-marketplace.module').then(m => m.NftMarketplaceModule)
     },
 ];
 
